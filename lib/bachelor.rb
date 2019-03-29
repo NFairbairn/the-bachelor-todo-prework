@@ -78,6 +78,6 @@ def get_average_age_for_season(data, season)
     end
   end
 
-  age_average = ((contest_ages.inject(&:+).to_f)/contest_ages.length)
+  age_average = ((contest_ages.inject(&:+).to_f)/contest_ages.length.to_f)
   age_average.round(0)
 end
